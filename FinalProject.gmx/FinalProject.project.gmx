@@ -68,6 +68,21 @@
       <sprite>sprites\s_zombiemaster_walk</sprite>
       <sprite>sprites\s_zombiemaster_death</sprite>
     </sprites>
+    <sprites name="s_structure">
+      <sprite>sprites\s_structure1</sprite>
+      <sprite>sprites\s_structure2</sprite>
+      <sprite>sprites\s_structure3</sprite>
+      <sprite>sprites\s_structure4</sprite>
+      <sprite>sprites\s_structure5</sprite>
+      <sprite>sprites\s_structure7</sprite>
+      <sprite>sprites\s_structure8</sprite>
+      <sprite>sprites\s_structure9</sprite>
+      <sprite>sprites\s_structure10</sprite>
+      <sprite>sprites\s_structure11</sprite>
+      <sprite>sprites\s_structure12</sprite>
+      <sprite>sprites\s_structure13</sprite>
+      <sprite>sprites\s_structure14</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="b_tiles">
@@ -102,10 +117,25 @@
       <object>objects\o_zombieboss2</object>
       <object>objects\o_zombiemaster</object>
     </objects>
+    <objects name="o_structure">
+      <object>objects\o_structure1</object>
+      <object>objects\o_structure2</object>
+      <object>objects\o_structure3</object>
+      <object>objects\o_structure4</object>
+      <object>objects\o_structure5</object>
+      <object>objects\o_structure6</object>
+      <object>objects\o_structure7</object>
+      <object>objects\o_structure8</object>
+      <object>objects\o_structure9</object>
+      <object>objects\o_structure10</object>
+      <object>objects\o_structure11</object>
+      <object>objects\o_structure12</object>
+      <object>objects\o_structure13</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\room0</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
