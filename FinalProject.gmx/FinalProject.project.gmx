@@ -6,20 +6,105 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_main</sprite>
-    <sprite>sprites\sprite1</sprite>
-    <sprite>sprites\sprite2</sprite>
+    <sprites name="s_zombie1">
+      <sprite>sprites\s_zombie1_attack</sprite>
+      <sprite>sprites\s_zombie1_walk</sprite>
+      <sprite>sprites\s_zombie1_death</sprite>
+    </sprites>
+    <sprites name="s_zombie3">
+      <sprite>sprites\s_zombie3_attack</sprite>
+      <sprite>sprites\s_zombie3_walk</sprite>
+      <sprite>sprites\s_zombie3_death</sprite>
+    </sprites>
+    <sprites name="s_zombie2">
+      <sprite>sprites\s_zombie2_attack</sprite>
+      <sprite>sprites\s_zombie2_walk</sprite>
+      <sprite>sprites\s_zombie2_death</sprite>
+    </sprites>
+    <sprites name="s_zombie4">
+      <sprite>sprites\s_zombie4_attack</sprite>
+      <sprite>sprites\s_zombie4_walk</sprite>
+      <sprite>sprites\s_zombie4_death</sprite>
+    </sprites>
+    <sprites name="s_zombiecop">
+      <sprite>sprites\s_zombiecop_attack</sprite>
+      <sprite>sprites\s_zombiecop_walk</sprite>
+      <sprite>sprites\s_zombiecop_death</sprite>
+    </sprites>
+    <sprites name="s_zombiearmy">
+      <sprite>sprites\s_zombiearmy_attack</sprite>
+      <sprite>sprites\s_zombiearmy_walk</sprite>
+      <sprite>sprites\s_zombiearmy_death</sprite>
+    </sprites>
+    <sprites name="s_zombiebighand">
+      <sprite>sprites\s_zombiebighand_attack1</sprite>
+      <sprite>sprites\s_zombiebighand_attack2</sprite>
+      <sprite>sprites\s_zombiebighand_walk</sprite>
+      <sprite>sprites\s_zombiebighand_death</sprite>
+    </sprites>
+    <sprites name="s_zombiebighead">
+      <sprite>sprites\s_zombiebighead_attack1</sprite>
+      <sprite>sprites\s_zombiebighead_attack2</sprite>
+      <sprite>sprites\s_zombiebighead_walk</sprite>
+      <sprite>sprites\s_zombiebighead_death</sprite>
+    </sprites>
+    <sprites name="s_zombieboss1">
+      <sprite>sprites\s_zombieboss1_attack1</sprite>
+      <sprite>sprites\s_zombieboss1_attack2</sprite>
+      <sprite>sprites\s_zombieboss1_walk</sprite>
+      <sprite>sprites\s_zombieboss1_death</sprite>
+    </sprites>
+    <sprites name="s_zombieboss2">
+      <sprite>sprites\s_zombieboss2_attack1</sprite>
+      <sprite>sprites\s_zombieboss2_attack2</sprite>
+      <sprite>sprites\s_zombieboss2_walk</sprite>
+      <sprite>sprites\s_zombieboss2_death</sprite>
+    </sprites>
+    <sprites name="s_zombiemaster">
+      <sprite>sprites\s_zombiemaster_attack1</sprite>
+      <sprite>sprites\s_zombiemaster_attack2</sprite>
+      <sprite>sprites\s_zombiemaster_attack3</sprite>
+      <sprite>sprites\s_zombiemaster_attack4</sprite>
+      <sprite>sprites\s_zombiemaster_walk</sprite>
+      <sprite>sprites\s_zombiemaster_death</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\b_1</background>
-    <background>background\b_2</background>
-    <background>background\b_3</background>
+    <backgrounds name="b_tiles">
+      <background>background\b_1</background>
+      <background>background\b_5</background>
+      <background>background\b_6</background>
+      <background>background\b_2</background>
+      <background>background\b_7</background>
+      <background>background\b_3</background>
+      <background>background\b_4</background>
+    </backgrounds>
+    <backgrounds name="b_board">
+      <background>background\b_main</background>
+      <background>background\b_shop</background>
+      <background>background\b_title</background>
+      <background>background\b_bank</background>
+      <background>background\b_document</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\o_main</object>
+    <objects name="o_zombie">
+      <object>objects\o_zombie1</object>
+      <object>objects\o_zombie2</object>
+      <object>objects\o_zombie3</object>
+      <object>objects\o_zombie4</object>
+      <object>objects\o_zombiecop</object>
+      <object>objects\o_zombiearmy</object>
+      <object>objects\o_zombiebighand</object>
+      <object>objects\o_zombiebighead</object>
+      <object>objects\o_zombieboss1</object>
+      <object>objects\o_zombieboss2</object>
+      <object>objects\o_zombiemaster</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room0</room>
   </rooms>
   <help>
