@@ -3,22 +3,22 @@
   <type>0</type>
   <xorig>0</xorig>
   <yorigin>0</yorigin>
-  <colkind>1</colkind>
+  <colkind>0</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>0</sepmasks>
+  <sepmasks>-1</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>126</bbox_left>
-  <bbox_right>332</bbox_right>
-  <bbox_top>129</bbox_top>
-  <bbox_bottom>448</bbox_bottom>
+  <bbox_left>63</bbox_left>
+  <bbox_right>166</bbox_right>
+  <bbox_top>64</bbox_top>
+  <bbox_bottom>224</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
   <TextureGroups>
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>512</width>
-  <height>512</height>
+  <width>256</width>
+  <height>256</height>
   <frames>
     <frame index="0">images\s_zombieboss1_death_0.png</frame>
     <frame index="1">images\s_zombieboss1_death_1.png</frame>

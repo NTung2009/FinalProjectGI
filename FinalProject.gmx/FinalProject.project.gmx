@@ -72,22 +72,85 @@
       <sprite>sprites\s_structure1</sprite>
       <sprite>sprites\s_structure2</sprite>
       <sprite>sprites\s_structure3</sprite>
-      <sprite>sprites\s_structure4</sprite>
-      <sprite>sprites\s_structure5</sprite>
-      <sprite>sprites\s_structure7</sprite>
-      <sprite>sprites\s_structure8</sprite>
-      <sprite>sprites\s_structure9</sprite>
-      <sprite>sprites\s_structure10</sprite>
-      <sprite>sprites\s_structure11</sprite>
-      <sprite>sprites\s_structure12</sprite>
       <sprite>sprites\s_structure13</sprite>
       <sprite>sprites\s_structure14</sprite>
+      <sprites name="s_grass">
+        <sprite>sprites\s_structure7</sprite>
+        <sprite>sprites\s_structure8</sprite>
+        <sprite>sprites\s_structure9</sprite>
+        <sprite>sprites\s_structure10</sprite>
+        <sprite>sprites\s_structure11</sprite>
+        <sprite>sprites\s_structure12</sprite>
+      </sprites>
+      <sprites name="s_vehicle">
+        <sprite>sprites\s_structure5</sprite>
+        <sprite>sprites\s_structure4</sprite>
+        <sprite>sprites\s_structure15</sprite>
+        <sprite>sprites\s_structure16</sprite>
+        <sprite>sprites\s_structure17</sprite>
+      </sprites>
     </sprites>
     <sprites name="s_button">
       <sprite>sprites\s_greenbutton</sprite>
       <sprite>sprites\s_redbutton</sprite>
       <sprite>sprites\s_nonebutton</sprite>
       <sprite>sprites\s_adminbutton</sprite>
+    </sprites>
+    <sprites name="s_mainboy">
+      <sprites name="s_bat">
+        <sprite>sprites\s_bat_idle1</sprite>
+        <sprite>sprites\s_bat_attack1</sprite>
+        <sprite>sprites\s_bat_walk1</sprite>
+      </sprites>
+      <sprites name="s_firethrower">
+        <sprite>sprites\s_firethrower_idle1</sprite>
+        <sprite>sprites\s_firethrower_attack1</sprite>
+        <sprite>sprites\s_firethrower_walk1</sprite>
+      </sprites>
+      <sprites name="s_gun">
+        <sprite>sprites\s_gun_idle1</sprite>
+        <sprite>sprites\s_gun_attack1</sprite>
+        <sprite>sprites\s_gun_walk1</sprite>
+      </sprites>
+      <sprites name="s_knife">
+        <sprite>sprites\s_knife_idle1</sprite>
+        <sprite>sprites\s_knife_attack1</sprite>
+        <sprite>sprites\s_knife_walk1</sprite>
+      </sprites>
+      <sprites name="s_riffle">
+        <sprite>sprites\s_riffle_idle1</sprite>
+        <sprite>sprites\s_riffle_attack1</sprite>
+        <sprite>sprites\s_riffle_walk1</sprite>
+      </sprites>
+      <sprite>sprites\s_death1</sprite>
+    </sprites>
+    <sprites name="s_maingirl">
+      <sprites name="s_bat">
+        <sprite>sprites\s_bat_idle2</sprite>
+        <sprite>sprites\s_bat_attack2</sprite>
+        <sprite>sprites\s_bat_walk2</sprite>
+      </sprites>
+      <sprites name="s_gun ">
+        <sprite>sprites\s_gun_idle2</sprite>
+        <sprite>sprites\s_gun_attack2</sprite>
+        <sprite>sprites\s_gun_walk2</sprite>
+      </sprites>
+      <sprites name="s_firethrower">
+        <sprite>sprites\s_firethrower_idle2</sprite>
+        <sprite>sprites\s_firethrower_attack2</sprite>
+        <sprite>sprites\s_firethrower_walk2</sprite>
+      </sprites>
+      <sprites name="s_knife">
+        <sprite>sprites\s_knife_idle2</sprite>
+        <sprite>sprites\s_knife_attack2</sprite>
+        <sprite>sprites\s_knife_walk2</sprite>
+      </sprites>
+      <sprites name="s_riffle">
+        <sprite>sprites\s_riffle_idle2</sprite>
+        <sprite>sprites\s_riffle_attack2</sprite>
+        <sprite>sprites\s_riffle_walk2</sprite>
+      </sprites>
+      <sprite>sprites\s_death2</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -128,16 +191,23 @@
       <object>objects\o_structure1</object>
       <object>objects\o_structure2</object>
       <object>objects\o_structure3</object>
-      <object>objects\o_structure4</object>
-      <object>objects\o_structure5</object>
       <object>objects\o_structure6</object>
       <object>objects\o_structure7</object>
-      <object>objects\o_structure8</object>
-      <object>objects\o_structure9</object>
-      <object>objects\o_structure10</object>
-      <object>objects\o_structure11</object>
-      <object>objects\o_structure12</object>
-      <object>objects\o_structure13</object>
+      <objects name="o_grass">
+        <object>objects\o_structure9</object>
+        <object>objects\o_structure10</object>
+        <object>objects\o_structure11</object>
+        <object>objects\o_structure12</object>
+        <object>objects\o_structure13</object>
+        <object>objects\o_structure8</object>
+      </objects>
+      <objects name="o_vehicle">
+        <object>objects\o_structure4</object>
+        <object>objects\o_structure5</object>
+        <object>objects\o_structure14</object>
+        <object>objects\o_structure15</object>
+        <object>objects\o_structure16</object>
+      </objects>
     </objects>
     <objects name="o_ button">
       <object>objects\o_greenbutton</object>
