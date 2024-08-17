@@ -83,6 +83,12 @@
       <sprite>sprites\s_structure13</sprite>
       <sprite>sprites\s_structure14</sprite>
     </sprites>
+    <sprites name="s_button">
+      <sprite>sprites\s_greenbutton</sprite>
+      <sprite>sprites\s_redbutton</sprite>
+      <sprite>sprites\s_nonebutton</sprite>
+      <sprite>sprites\s_adminbutton</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="b_tiles">
@@ -100,6 +106,7 @@
       <background>background\b_title</background>
       <background>background\b_bank</background>
       <background>background\b_document</background>
+      <background>background\b_selectlevel</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -132,10 +139,23 @@
       <object>objects\o_structure12</object>
       <object>objects\o_structure13</object>
     </objects>
+    <objects name="o_ button">
+      <object>objects\o_greenbutton</object>
+      <object>objects\o_redbutton</object>
+      <object>objects\o_nonebutton</object>
+      <object>objects\o_adminbutton</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
-    <room>rooms\room1</room>
+    <room>rooms\r_main</room>
+    <room>rooms\r_game</room>
+    <rooms name="r_board">
+      <room>rooms\r_shop</room>
+      <room>rooms\r_selectlevel</room>
+      <room>rooms\r_title</room>
+      <room>rooms\r_bank</room>
+      <room>rooms\r_document</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
