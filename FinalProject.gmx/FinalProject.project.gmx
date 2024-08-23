@@ -152,6 +152,7 @@
       </sprites>
       <sprite>sprites\s_death2</sprite>
     </sprites>
+    <sprite>sprites\s_block</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="b_tiles">
@@ -171,8 +172,19 @@
       <background>background\b_document</background>
       <background>background\b_selectlevel</background>
     </backgrounds>
+    <backgrounds name="b_document">
+      <background>background\b_zombie</background>
+      <background>background\b_copzombie</background>
+      <background>background\b_armyzombie</background>
+      <background>background\b_zombiebighand</background>
+      <background>background\b_zombiebighead</background>
+      <background>background\b_zombieboss1</background>
+      <background>background\b_zombieboss2</background>
+      <background>background\b_finalzombie</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="o_zombie">
       <object>objects\o_zombie1</object>
