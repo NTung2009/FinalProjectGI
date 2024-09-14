@@ -50,7 +50,23 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
-  <instances/>
+  <instances>
+    <instance objName="o_shop" x="32" y="128" name="inst_E2234A3B" locked="0" code="" scaleX="2.421875" scaleY="0.59375" colour="4294967295" rotation="0"/>
+    <instance objName="o_title" x="35" y="192" name="inst_7D3432D3" locked="0" code="" scaleX="2.39682531356812" scaleY="0.640625" colour="4294967295" rotation="0"/>
+    <instance objName="o_bank" x="32" y="256" name="inst_90B8A38C" locked="0" code="" scaleX="2.390625" scaleY="0.6875" colour="4294967295" rotation="0"/>
+    <instance objName="o_exit" x="41" y="395" name="inst_2C332D90" locked="0" code="" scaleX="2.35999989509583" scaleY="0.639999985694885" colour="4294967295" rotation="0"/>
+    <instance objName="o_play" x="309" y="480" name="inst_508940D2" locked="0" code="" scaleX="1.75999999046326" scaleY="0.4375" colour="4294967295" rotation="0"/>
+    <instance objName="o_play" x="439" y="476" name="inst_8F967FB3" locked="0" code="" scaleX="1.9206348657608" scaleY="0.59375" colour="4294967295" rotation="0"/>
+    <instance objName="o_blockdocument1" x="235" y="116" name="inst_73CD7DEE" locked="0" code="" scaleX="1.58730161190033" scaleY="1.578125" colour="4294967295" rotation="0"/>
+    <instance objName="o_blockdocument2" x="358" y="117" name="inst_28A5FAB5" locked="0" code="" scaleX="1.6875" scaleY="1.61904764175415" colour="4294967295" rotation="0"/>
+    <instance objName="o_blockdocument3" x="497" y="117" name="inst_905EC7C1" locked="0" code="" scaleX="1.6031745672226" scaleY="1.65625" colour="4294967295" rotation="0"/>
+    <instance objName="o_blockdocument4" x="236" y="216" name="inst_108B5CAB" locked="0" code="" scaleX="1.65079367160797" scaleY="1.69841265678406" colour="4294967295" rotation="0"/>
+    <instance objName="o_blockdocument5" x="359" y="222" name="inst_FFFE34A5" locked="0" code="" scaleX="1.6031745672226" scaleY="1.58730161190033" colour="4294967295" rotation="0"/>
+    <instance objName="o_blockdocument6" x="493" y="227" name="inst_C5B3C6B0" locked="0" code="" scaleX="1.63492059707642" scaleY="1.59375" colour="4294967295" rotation="0"/>
+    <instance objName="o_blockdocument7" x="234" y="325" name="inst_EB7AEF42" locked="0" code="" scaleX="1.62000000476837" scaleY="1.703125" colour="4294967295" rotation="0"/>
+    <instance objName="o_blockdocument8" x="357" y="328" name="inst_4DF62C4D" locked="0" code="" scaleX="1.66666662693024" scaleY="1.703125" colour="4294967295" rotation="0"/>
+    <instance objName="o_mainpage" x="183" y="475" name="inst_8BCB71C5" locked="0" code="" scaleX="1.609375" scaleY="0.515625" colour="4294967295" rotation="0"/>
+  </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

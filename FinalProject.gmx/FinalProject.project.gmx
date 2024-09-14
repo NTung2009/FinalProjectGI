@@ -4,7 +4,13 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sou_1</sound>
+    <sound>sound\sou_2</sound>
+    <sound>sound\sou_3</sound>
+    <sound>sound\sou_4</sound>
+    <sound>sound\sou_5</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="s_zombie1">
       <sprite>sprites\s_zombie1_attack</sprite>
@@ -95,12 +101,16 @@
       <sprite>sprites\s_redbutton</sprite>
       <sprite>sprites\s_nonebutton</sprite>
       <sprite>sprites\s_adminbutton</sprite>
+      <sprite>sprites\s_lock</sprite>
+      <sprite>sprites\s_victory</sprite>
+      <sprite>sprites\s_lose</sprite>
+      <sprite>sprites\s_instruct</sprite>
     </sprites>
     <sprites name="s_mainboy">
       <sprites name="s_bat">
         <sprite>sprites\s_bat_idle1</sprite>
-        <sprite>sprites\s_bat_attack1</sprite>
         <sprite>sprites\s_bat_walk1</sprite>
+        <sprite>sprites\s_bat_attack1</sprite>
       </sprites>
       <sprites name="s_firethrower">
         <sprite>sprites\s_firethrower_idle1</sprite>
@@ -153,6 +163,40 @@
       <sprite>sprites\s_death2</sprite>
     </sprites>
     <sprite>sprites\s_block</sprite>
+    <sprites name="s_bullet">
+      <sprite>sprites\s_bullet1</sprite>
+      <sprite>sprites\s_bullet2</sprite>
+      <sprite>sprites\s_bullet3</sprite>
+    </sprites>
+    <sprites name="s_monsterbullet">
+      <sprite>sprites\s_monsterbullet1</sprite>
+      <sprite>sprites\s_monsterbullet2</sprite>
+      <sprite>sprites\s_monsterbullet3</sprite>
+      <sprite>sprites\s_monsterbullet4</sprite>
+      <sprite>sprites\s_monsterbullet5</sprite>
+      <sprite>sprites\s_monsterbullet6</sprite>
+      <sprite>sprites\s_monsterbullet7</sprite>
+    </sprites>
+    <sprites name="s_attack">
+      <sprite>sprites\s_knife</sprite>
+      <sprite>sprites\s_gun</sprite>
+      <sprite>sprites\s_riffle</sprite>
+      <sprite>sprites\s_firethrower</sprite>
+    </sprites>
+    <sprites name="s_number">
+      <sprite>sprites\s_1</sprite>
+      <sprite>sprites\s_2</sprite>
+      <sprite>sprites\s_3</sprite>
+      <sprite>sprites\s_4</sprite>
+      <sprite>sprites\s_5</sprite>
+      <sprite>sprites\s_6</sprite>
+      <sprite>sprites\s_7</sprite>
+      <sprite>sprites\s_8</sprite>
+      <sprite>sprites\s_9</sprite>
+      <sprite>sprites\s_10</sprite>
+      <sprite>sprites\s_100</sprite>
+      <sprite>sprites\s__1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="b_tiles">
@@ -171,6 +215,9 @@
       <background>background\b_bank</background>
       <background>background\b_document</background>
       <background>background\b_selectlevel</background>
+      <background>background\b_inventory</background>
+      <background>background\b_chosse</background>
+      <background>background\b_guide</background>
     </backgrounds>
     <backgrounds name="b_document">
       <background>background\b_zombie</background>
@@ -184,7 +231,13 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
+  <scripts name="scripts">
+    <script>scripts\scr_input.gml</script>
+    <script>scripts\scr_idle.gml</script>
+    <script>scripts\scr_walk.gml</script>
+    <script>scripts\scr_attack.gml</script>
+    <script>scripts\scr_death.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="o_zombie">
       <object>objects\o_zombie1</object>
@@ -198,6 +251,7 @@
       <object>objects\o_zombieboss1</object>
       <object>objects\o_zombieboss2</object>
       <object>objects\o_zombiemaster</object>
+      <object>objects\o_spawn</object>
     </objects>
     <objects name="o_structure">
       <object>objects\o_structure1</object>
@@ -226,17 +280,117 @@
       <object>objects\o_redbutton</object>
       <object>objects\o_nonebutton</object>
       <object>objects\o_adminbutton</object>
+      <object>objects\o_lose</object>
+      <object>objects\o_win</object>
+      <object>objects\o_instruct</object>
     </objects>
+    <object>objects\o_men</object>
+    <objects name="o_block">
+      <object>objects\o_name</object>
+      <object>objects\o_password</object>
+      <object>objects\o_save</object>
+      <object>objects\o_play</object>
+      <object>objects\o_none</object>
+      <object>objects\o_admin</object>
+      <object>objects\o_shop</object>
+      <object>objects\o_title</object>
+      <object>objects\o_bank</object>
+      <object>objects\o_document</object>
+      <object>objects\o_exit</object>
+      <objects name="o_blockdocument">
+        <object>objects\o_blockdocument6</object>
+        <object>objects\o_blockdocument1</object>
+        <object>objects\o_blockdocument2</object>
+        <object>objects\o_blockdocument3</object>
+        <object>objects\o_blockdocument4</object>
+        <object>objects\o_blockdocument5</object>
+        <object>objects\o_blockdocument7</object>
+        <object>objects\o_blockdocument8</object>
+      </objects>
+      <objects name="o_blockattack">
+        <object>objects\o_gunblock</object>
+        <object>objects\o_riffleblock</object>
+        <object>objects\o_batblock</object>
+        <object>objects\o_firethrowerblock</object>
+        <object>objects\o_knifeblock</object>
+      </objects>
+      <object>objects\o_mainpage</object>
+      <object>objects\o_money</object>
+      <object>objects\o_health</object>
+      <object>objects\o_100</object>
+      <object>objects\o_200</object>
+      <object>objects\o_300</object>
+      <object>objects\o_400</object>
+      <object>objects\o_700</object>
+      <object>objects\o_LV</object>
+    </objects>
+    <object>objects\o_bullet</object>
+    <object>objects\o_bullet3</object>
+    <object>objects\o_bullet2</object>
+    <objects name="o_monsterbullet">
+      <object>objects\o_monsterbullet1</object>
+      <object>objects\o_monsterbullet2</object>
+      <object>objects\o_monsterbullet3</object>
+      <object>objects\o_monsterbullet4</object>
+      <object>objects\o_monsterbullet5</object>
+      <object>objects\o_monsterbullet6</object>
+      <object>objects\o_monsterbullet7</object>
+    </objects>
+    <objects name="o_lock">
+      <object>objects\o_lockknife</object>
+      <object>objects\o_lockgun</object>
+      <object>objects\o_lockriffle</object>
+      <object>objects\o_lockfirethrower</object>
+    </objects>
+    <objects name="o_attack">
+      <object>objects\o_riffle</object>
+      <object>objects\o_gun</object>
+      <object>objects\o_knife</object>
+      <object>objects\o_firethrower</object>
+    </objects>
+    <objects name="o_number">
+      <object>objects\o_7</object>
+      <object>objects\o_1</object>
+      <object>objects\o_2</object>
+      <object>objects\o_3</object>
+      <object>objects\o_4</object>
+      <object>objects\o_5</object>
+      <object>objects\o_6</object>
+      <object>objects\o_8</object>
+      <object>objects\o_9</object>
+      <object>objects\o_10</object>
+      <object>objects\o_100_2</object>
+      <object>objects\o__1</object>
+    </objects>
+    <object>objects\o_game</object>
+    <object>objects\o_wall</object>
+    <object>objects\o_b</object>
+    <object>objects\o_name2</object>
+    <object>objects\o_seLV</object>
+    <object>objects\o_back</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_main</room>
+    <room>rooms\r_selectlevel</room>
     <room>rooms\r_game</room>
+    <room>rooms\r_inventory</room>
+    <room>rooms\r_shop</room>
     <rooms name="r_board">
-      <room>rooms\r_shop</room>
-      <room>rooms\r_selectlevel</room>
       <room>rooms\r_title</room>
       <room>rooms\r_bank</room>
       <room>rooms\r_document</room>
+      <room>rooms\r_chosse</room>
+      <room>rooms\r_GUIDE</room>
+    </rooms>
+    <rooms name="r_document">
+      <room>rooms\r_bighead</room>
+      <room>rooms\r_zombie</room>
+      <room>rooms\r_cop</room>
+      <room>rooms\r_army</room>
+      <room>rooms\r_bighand</room>
+      <room>rooms\r_boss1</room>
+      <room>rooms\r_boss2</room>
+      <room>rooms\r_final</room>
     </rooms>
   </rooms>
   <help>
